@@ -14,6 +14,7 @@ const Parent = ()=>{
     }
     // console.log(cartItems);
     // console.log(itemId);
+    // steps.assignmentAction.outputs.scoreReceived
     return(
         <div className="parent">
             <h1>Parent Component</h1>
