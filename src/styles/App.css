@@ -1,1 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    width: 550px;
+    padding: 1rem;
+    background-color:#73FE00;
+}
+.child{
+    height: 100%;
+    width: 540px;
+    background-color:#CA5C1A;
+    display: flex;
+    flex-direction: column;
+    padding:1rem 0.3rem;
+    justify-content: space-around;
+}
+.parent-elements{
+    margin: 1rem 0 0.4rem;
+}
+.parent input{
+    width: 25%;
+    padding:0 0.5rem ;
+}
+p{
+    margin-top: 1rem;
+}
 
+ul{
+    margin-top: 1rem;
+}
+li{
+    padding-left:2rem;
+    font-weight: 500;
+    font-size:1.3rem;
+    list-style-position: inside;
+}
+button{
+    cursor: pointer;
+}
