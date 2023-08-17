@@ -12,9 +12,12 @@ const Parent = ()=>{
         let cart = [...cartItems,{id:itemId,itemName:item,itemPrice:price}];
         setCartItems(cart);
     }
+    function removeItem(id){
+        let filterItem = cartItems.filter(ele => ele.id !== id);
+        setCartItems(filterItem);
+    }
     // console.log(cartItems);
     // console.log(itemId);
-    // steps.assignmentAction.outputs.scoreReceived
     return(
         <div className="parent">
             <h1>Parent Component</h1>
@@ -25,9 +28,7 @@ const Parent = ()=>{
                 <input type="number" id="itemPrice" />
                 <button onClick={addItem}>Add Item</button>
             </div>
-            <Child getCartItems={cartItems}
-                   setCartItemsFn = {setCartItems} 
-            />
+            <Child getCartItems={cartItems} removeItem = {removeItem} />
         </div>
 
     )

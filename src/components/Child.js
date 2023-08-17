@@ -1,10 +1,6 @@
 import React from 'react';
 
-const Child = ({getCartItems,setCartItemsFn})=>{
-    function removeItem(id){
-        let filterItem = getCartItems.filter(ele => ele.id !== id);
-        setCartItemsFn([...filterItem]);
-    }
+const Child = ({getCartItems,removeItem})=>{
     return(
         <div className="child">
             <h2>Child Component</h2>
